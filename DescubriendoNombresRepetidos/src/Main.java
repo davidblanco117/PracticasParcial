@@ -17,8 +17,7 @@ public class Main {
 		try {
 			Scanner s = new Scanner(new File("nombres.in"));
 			PrintWriter p = new PrintWriter(new File("nombres.out"));
-			// FileWriter fw = new FileWriter(new File("nombres.out"));
-			// BufferedWriter bw= new BufferedWriter(fw);
+
 			cantidadDeChicos = s.nextInt();
 			n = new ArrayList<NombresRepetidos>();
 			nMasFrecuentes = s.nextInt();
@@ -46,16 +45,13 @@ public class Main {
 				p.println(n.get(i).getNombre() + " " + (n.get(i).getCantApariciones() + 1));
 			}
 			p.close();
-			// fw.close();
-
-			System.out.println("hola mundo");
+			
 			s.close();
 		} catch (IOException e) {
 			
 			e.printStackTrace();
 		}
 
-		System.out.println("hola mundo");
 	}
 
 }
